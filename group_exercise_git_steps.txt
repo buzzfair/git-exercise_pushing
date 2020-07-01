@@ -1,0 +1,75 @@
+
+guinw@DESKTOP-L44E48F MINGW64 ~/Google Drive/!!!!!MASTERCLASS_/programming/Cultivating Coders/Exercises/Git Bash (master)
+$ cd ..
+
+guinw@DESKTOP-L44E48F MINGW64 ~/Google Drive/!!!!!MASTERCLASS_/programming/Cultivating Coders/Exercises
+$ mkdir Git-Exercise_Pushing
+
+guinw@DESKTOP-L44E48F MINGW64 ~/Google Drive/!!!!!MASTERCLASS_/programming/Cultivating Coders/Exercises
+$ cd Git-Exercise_Pushing/
+
+guinw@DESKTOP-L44E48F MINGW64 ~/Google Drive/!!!!!MASTERCLASS_/programming/Cultivating Coders/Exercises/Git-Exercise_Pushing
+$ touch file.txt
+
+guinw@DESKTOP-L44E48F MINGW64 ~/Google Drive/!!!!!MASTERCLASS_/programming/Cultivating Coders/Exercises/Git-Exercise_Pushing
+$ cd ..
+
+guinw@DESKTOP-L44E48F MINGW64 ~/Google Drive/!!!!!MASTERCLASS_/programming/Cultivating Coders/Exercises
+$ cd Git-Exercise_Pushing/
+
+guinw@DESKTOP-L44E48F MINGW64 ~/Google Drive/!!!!!MASTERCLASS_/programming/Cultivating Coders/Exercises/Git-Exercise_Pushing
+$ echo "# git-exercise_pushing" >> README.md
+
+guinw@DESKTOP-L44E48F MINGW64 ~/Google Drive/!!!!!MASTERCLASS_/programming/Cultivating Coders/Exercises/Git-Exercise_Pushing
+$ git init
+Initialized empty Git repository in C:/Users/guinw/Google Drive/!!!!!MASTERCLASS_/programming/Cultivating Cod
+ers/Exercises/Git-Exercise_Pushing/.git/
+
+guinw@DESKTOP-L44E48F MINGW64 ~/Google Drive/!!!!!MASTERCLASS_/programming/Cultivating Coders/Exercises/Git-Exercise_Pushing (master)
+$ git add README.md
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory
+
+guinw@DESKTOP-L44E48F MINGW64 ~/Google Drive/!!!!!MASTERCLASS_/programming/Cultivating Coders/Exercises/Git-Exercise_Pushing (master)
+$ git commit - "first commit"
+error: pathspec '-' did not match any file(s) known to git
+error: pathspec 'first commit' did not match any file(s) known to git
+
+guinw@DESKTOP-L44E48F MINGW64 ~/Google Drive/!!!!!MASTERCLASS_/programming/Cultivating Coders/Exercises/Git-Exercise_Pushing (master)
+$ git commit -m "first commit"
+[master (root-commit) cfcce31] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+guinw@DESKTOP-L44E48F MINGW64 ~/Google Drive/!!!!!MASTERCLASS_/programming/Cultivating Coders/Exercises/Git-Exercise_Pushing (master)
+$ git remote add origin https://github.com/buzzfair/git-exercise_pushing.git
+
+guinw@DESKTOP-L44E48F MINGW64 ~/Google Drive/!!!!!MASTERCLASS_/programming/Cultivating Coders/Exercises/Git-Exercise_Pushing (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 237 bytes | 237.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/buzzfair/git-exercise_pushing.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+guinw@DESKTOP-L44E48F MINGW64 ~/Google Drive/!!!!!MASTERCLASS_/programming/Cultivating Coders/Exercises/Git-Exercise_Pushing (master)
+$ git add .
+
+guinw@DESKTOP-L44E48F MINGW64 ~/Google Drive/!!!!!MASTERCLASS_/programming/Cultivating Coders/Exercises/Git-Exercise_Pushing (master)
+$ git commit -m "test"
+[master 807ae72] test
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file.txt
+
+guinw@DESKTOP-L44E48F MINGW64 ~/Google Drive/!!!!!MASTERCLASS_/programming/Cultivating Coders/Exercises/Git-Exercise_Pushing (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+guinw@DESKTOP-L44E48F MINGW64 ~/Google Drive/!!!!!MASTERCLASS_/programming/Cultivating Coders/Exercises/Git-Exercise_Pushing (master)
+$
